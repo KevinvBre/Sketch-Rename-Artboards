@@ -1,10 +1,5 @@
 /*  2018.10.26, By: Kevin van Breemaat, kevinvanbreemaat.nl     */
 
-// MSLayerMovement.moveToFront([layer]);
-// MSLayerMovement.moveBackward([layer]);
-// MSLayerMovement.moveToBack([layer]);
-// MSLayerMovement.moveForward([layer]);
-
 // shortcut command: shift+cmd+ctrl and <--
 function renameArtboardsOnPage(context_){
 

@@ -1,8 +1,6 @@
 # Rename Artboards for Sketch.
 _Rename Artboards based on their X and Y locations in Sketch_
 
-<!-- ![Screencast of the Stickers plugin](demo.gif) -->
-
 I kept going mental when renaming artboards to be clean and understandable for exports in Zeplin, Jira or Dropbox. And I wanted to impress the next designer to open document with my 'dedication to neatly renaming artboards skills'. My Sketch pages are named like for function groups like `A - Homepage`, story numbers `ABC-1234` or `Archived`.
 
 ### This plugin does this
