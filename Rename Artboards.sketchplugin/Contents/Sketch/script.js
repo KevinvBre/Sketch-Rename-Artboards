@@ -66,7 +66,7 @@ function renameArtboardsOnPage(context_){
                    pageNameBase = pageNameBase[0]; // remove the old numbers and save base
 
 
-                   var name = pageNameBase + "." + yIndex + "." + xIndex + " - " + layerNameBase;    // create the name
+                   var name = pageNameBase + " " + yIndex + "." + xIndex + " - " + layerNameBase;    // create the name
 
                    artboards[i].setName(name);
 
