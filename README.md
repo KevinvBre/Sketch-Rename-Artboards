@@ -23,7 +23,7 @@ Enjoy!
 ## Installation
 
 ### Download the zip
-1. Download and open [align-and-resize-to-layout-master.zip](https://github.com/KevinvBre/sketch-rename-layers/archive/master.zip)
+1. Download and open [align-and-resize-to-layout-master.zip](https://github.com/KevinvBre/sketch-rename-artboards/archive/master.zip)
 2. Double click on the plugin and open up Sketch.
 
 ## How to Use
