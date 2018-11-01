@@ -5,6 +5,7 @@
     "authorEmail" : "info@kevinvanbreemaat.nl",
     "author" : "Kevin van Breemaat",
     "homepage": "https://www.kevinvanbreemaat.nl",
+    "appcast": "https://raw.githubusercontent.com/KevinvBre/Sketch-Rename-Artboards/master/appcast.xml",
     "version": "0.1",
     "icon": "icon.png",
       "commands": [
