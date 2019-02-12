@@ -1,5 +1,15 @@
 /*  2018.10.26, By: Kevin van Breemaat, kevinvanbreemaat.nl     */
 
+
+
+
+
+
+
+
+
+
+
 // shortcut command: shift+cmd+ctrl and <--
 function renameArtboardsOnPage(context_){
 
@@ -12,7 +22,11 @@ function renameArtboardsOnPage(context_){
         var xCount = []; //verticaal
         var yCount = [];  //horizontaal
 
-        for (var i = 0; i < artboards.count(); i++)yCount.push(   artboards[i].frame().y()  );
+        for (var i = 0; i < artboards.count(); i++){
+            if(artboards[i].layers().count() > 1){
+                yCount.push(   artboards[i].frame().y()  );
+            }
+        }
 
         yCount.sort(function(a, b){return a-b});
         yCount = uniq(yCount); // cleans up dublicates
@@ -31,10 +45,15 @@ function renameArtboardsOnPage(context_){
                     var valueToPush = new Array();
                     valueToPush[0] = layerX;
                     valueToPush[1] = p;
-                    xCount.push(valueToPush);                   // store new array containd the layer number and x pos
+
+
+                    if(artboards[i].layers().count() > 1){
+                        xCount.push(valueToPush);                   // store new array containd the layer number and x pos
+                    }
                 }
             }
         }
+
 
         /*
             Assign the names row by row
@@ -48,7 +67,7 @@ function renameArtboardsOnPage(context_){
             rowXposses.sort(function(a, b){return a-b});
 
             for (var i = 0; i < artboards.count(); i++){
-                let yIndex = yCount.indexOf(artboards[i].frame().y());
+                let yIndex = yCount.indexOf(artboards[i].frame().y()); // find the current y row based on y value.
                 if(yIndex == p){    // y index pos should match the current row number.
                     let xIndex = rowXposses.indexOf(artboards[i].frame().x());
 
@@ -83,10 +102,13 @@ function renameArtboardsOnPage(context_){
             }
         }
 
+        for (var i = 0; i < artboards.count(); i++){
+            if(artboards[i].layers().count() <= 1){
+                console.log(artboards[i].name());
+                artboards[i].setName("__");
+            }
+        }
         // currentArtboardnumbers.sort(function(a, b){return a-b});
-
-
-
         // console.log("##{#{#{#{}}}} 1");
         // console.log(currentArtboardnumbers);
 
