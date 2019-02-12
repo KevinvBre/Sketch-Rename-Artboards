@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Rename Artboards based on their X and Y locations in Sketch</title>
+    <title>Replace Lines by Rectangles in Sketch</title>
     <link>http://sparkle-project.org/files/sparkletestcast.xml</link>
-    <description>Rename Artboards based on their X and Y locations in Sketch</description>
+    <description>Replace Lines by Rectangles in Sketch</description>
     <language>en</language>
       <item>
         <title>Version 0.1</title>
@@ -14,7 +14,7 @@
             </ul>
           ]]>
         </description>
-        <enclosure url="https://github.com/KevinvBre/Sketch-rename-layers/archive/master.zip" sparkle:version="0.1" />
+        <enclosure url="https://github.com/KevinvBre/sketch-line2rect/archive/master.zip" sparkle:version="0.1" />
       </item>
   </channel>
 </rss>

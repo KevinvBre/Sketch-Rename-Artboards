@@ -1,0 +1,32 @@
+{
+    "name" : "Line 2 Rect",
+    "identifier": "nl.kevinvanbreemaat.line2rect",
+    "description" : "Convert every new line into a rectangle, no more 0.5 pixels",
+    "authorEmail" : "info@kevinvanbreemaat.nl",
+    "author" : "Kevin van Breemaat",
+    "homepage": "https://www.kevinvanbreemaat.nl",
+    "appcast": "",
+    "version": "0.1",
+    "icon": "icon.png",
+      "commands": [
+            {
+                "script": "script.js",
+                "handlers" : {
+                    "InsertLine.finish": "InsertLine",
+                    "SelectionChanged.finish": "SelectionChanged"
+                },
+            },
+            {
+                "name": "About",
+                "identifier": "About",
+                "script": "script.js",
+                "handler": "website"
+            },
+      ],
+      "menu": {
+        "title": "Line 2 Rect",
+        "items": [
+          "About"
+        ]
+      }
+}
